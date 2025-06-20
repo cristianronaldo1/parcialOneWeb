@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Desarrollo Web Avanzado</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/569b772610.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <h1>Desarrollo Web Avanzado</h1>
+            </div>
+            <button class="modo-btn" id="modoBtn">
+                <i class="fas fa-moon"></i> Modo Oscuro
+            </button>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="activo">Inicio</a></li>
+                <li><a href="#contenidos">Contenidos</a></li>
+                <li><a href="#horario">Horario</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section id="inicio">
+        <div class="container">
+            <h2>Bienvenido al Curso</h2>
+            <div class="bienvenida">
+                <p>Este curso está diseñado para llevarte al siguiente nivel en el desarrollo web moderno. Aprenderás las últimas tecnologías y mejores prácticas para crear aplicaciones web robustas, escalables y con excelente rendimiento. El curso combina teoría con práctica para que puedas aplicar inmediatamente lo aprendido en proyectos reales.</p>
+            </div>
+            
+            <h3>Objetivos del curso:</h3>
+            <ul class="objetivos">
+                <li>Dominar los fundamentos avanzados de HTML5, CSS3 y JavaScript ES6+</li>
+                <li>Aprender frameworks modernos como React y Vue.js</li>
+                <li>Implementar técnicas de optimización de rendimiento</li>
+                <li>Desarrollar aplicaciones con arquitecturas escalables</li>
+                <li>Integrar APIs RESTful y GraphQL</li>
+                <li>Implementar seguridad web avanzada</li>
+                <li>Utilizar herramientas de desarrollo profesional</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="contenidos">
+        <div class="container">
+            <h2>Contenidos del Curso</h2>
+            <ol class="temas">
+                <li>Fundamentos Avanzados
+                    <ul class="subtemas">
+                        <li>HTML5 Semántico avanzado</li>
+                        <li>CSS Grid y Flexbox profesional</li>
+                        <li>Animaciones y transiciones CSS</li>
+                        <li>JavaScript moderno (ES6+)</li>
+                    </ul>
+                </li>
+                <li>Frameworks Frontend
+                    <ul class="subtemas">
+                        <li>React: Componentes avanzados</li>
+                        <li>Vue.js: Composición API</li>
+                        <li>State management (Redux, Vuex)</li>
+                        <li>Renderizado del lado del servidor</li>
+                    </ul>
+                </li>
+                <li>Backend para Frontend
+                    <ul class="subtemas">
+                        <li>Node.js y Express</li>
+                        <li>APIs RESTful avanzadas</li>
+                        <li>GraphQL: Schemas y resolvers</li>
+                        <li>Autenticación JWT y OAuth</li>
+                    </ul>
+                </li>
+                <li>Optimización y Despliegue
+                    <ul class="subtemas">
+                        <li>Webpack y Vite</li>
+                        <li>Lazy loading y code splitting</li>
+                        <li>Docker para desarrolladores frontend</li>
+                        <li>CI/CD para aplicaciones web</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </section>
+    
+    <section id="horario">
+        <div class="container">
+            <h2>Horario Académico</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Hora</th>
+                        <th>Tema</th>
+                        <th>Actividad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>18:00 - 20:00</td>
+                        <td>React Avanzado</td>
+                        <td>Taller práctico</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>18:00 - 20:00</td>
+                        <td>Arquitectura Frontend</td>
+                        <td>Presentación teórica</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>18:00 - 20:00</td>
+                        <td>Optimización de Rendimiento</td>
+                        <td>Análisis de casos</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>10:00 - 13:00</td>
+                        <td>Proyecto Integrador</td>
+                        <td>Desarrollo guiado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+    <section id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required minlength="3" pattern="[A-Za-z ]+">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="motivo">Motivo de contacto:</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="">Seleccione un motivo</option>
+                        <option value="informacion">Información sobre el curso</option>
+                        <option value="inscripcion">Proceso de inscripción</option>
+                        <option value="dudas">Dudas técnicas</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required minlength="10"></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>😎 Diseñado por: Cristian Albor - 2025 😎</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

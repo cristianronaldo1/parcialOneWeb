@@ -1,0 +1,340 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+/* Estructura principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo i {
+    font-size: 2rem;
+    color: #3498db;
+}
+
+.logo h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.modo-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.modo-btn:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* Navegación */
+nav {
+    background-color: #34495e;
+}
+
+nav {
+    position: sticky; 
+    top: 0;          /* Se pega a la parte superior */
+    z-index: 100;    /* Para que esté por encima de todo*/
+    width: 100%;
+}
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background-color 0.3s;
+}
+
+.nav-menu a:hover {
+    background-color: #2c3e50;
+}
+
+.nav-menu a.activo {
+    background-color: #3498db;
+    font-weight: 800;
+}
+
+/* Secciones */
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid #eee;
+}
+
+section h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Inicio */
+#inicio {
+    background-color: #f1f8fe;
+}
+
+.bienvenida {
+    margin-bottom: 30px;
+}
+
+.objetivos {
+    list-style: none;
+}
+
+.objetivos li {
+    margin-bottom: 10px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.objetivos li::before {
+    content: "\f058";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #3498db;
+    position: absolute;
+    left: 0;
+}
+
+/* Contenidos */
+#contenidos {
+    background-color: #f9f9f9;
+}
+
+.temas {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+.temas li {
+    margin-bottom: 15px;
+}
+
+.subtemas {
+    list-style-type: lower-alpha;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.subtemas li {
+    margin-bottom: 5px;
+}
+
+/* Horario */
+#horario {
+    background-color: #f1f8fe;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina los espacios entre celdas */
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+    font-weight: 600;
+}
+
+tr:nth-child(even) { /* Filas pares con fondo diferente */
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e6f7ff;
+}
+
+/* Contacto */
+#contacto {
+    background-color: #f9f9f9;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+.btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Añadido efecto de transformación */
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+/* styles para Modo oscuro */
+.modo-oscuro {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.modo-oscuro section {
+    border-bottom-color: #333;
+}
+
+.modo-oscuro #inicio,
+.modo-oscuro #horario {
+    background-color: #1e1e1e;
+}
+
+.modo-oscuro #contenidos,
+.modo-oscuro #contacto {
+    background-color: #121212;
+}
+
+.modo-oscuro section h2 {
+    color: #3498db;
+}
+
+.modo-oscuro table tr:nth-child(even) {
+    background-color:  #2d2d2d;
+}
+
+.modo-oscuro table tr:hover {
+    background-color: #333;
+}
+
+.modo-oscuro input,
+.modo-oscuro select,
+.modo-oscuro textarea {
+    background-color: #333;
+    color: #e0e0e0;
+    border-color: #444;
+}
+
+/* Media queries - responsive  */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column; /* Cambia la dirección del flex a columna */
+        gap: 15px;
+    }
+    nav{
+        position: static;
+    }
+    .nav-menu {
+        flex-direction: column;
+    }
+    
+    .nav-menu a {
+        padding: 10px 15px;
+    }
+    
+    section {
+        padding: 30px 0;
+    }
+    
+    section h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .logo h1 {
+        font-size: 1.3rem;
+    }
+    
+    section h2 {
+        font-size: 1.5rem;
+    }
+    
+    th, td {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+}
